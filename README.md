@@ -55,3 +55,10 @@ You are ready to go! Press `Apply`.
 * Open `System Settings` > `Users & Groups` > `Right click on your user` > `Advanced Options` > Set Home directory to `/Volumes/Users/yourUserName`
 
 Your home directory is now setted on the case-sensitive partition so you can start with your development projects.. to be continued...
+
+# WIP documentation
+Install Nerd-Font:
+```shell
+brew tap homebrew/cask-fonts &&
+brew install --cask font-space-mono-nerd-font
+```
