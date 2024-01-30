@@ -14,6 +14,8 @@ Actually I explore [Ansible](https://www.ansible.com/). With this, I can automat
 Mostly I do full stack web development with PHP (Laravel, Twig, Everest), JS, TS, Node.js, (Express.js, Vue.js, React, Alpine.js) HTML, CSS (TailwindCSS, Bootstrap, Sass, Less), Docker bla bla bla...
 But! -> You will find Rust, C-Languages, Python and other stuff in my projects too. I'm a developer and I like to explore new things.
 
+With Ubuntu Linux I have my setup from zero OS to full development environment in about an hour.
+
 ---
 <br>
 
@@ -21,10 +23,11 @@ But! -> You will find Rust, C-Languages, Python and other stuff in my projects t
 * [Set up Apple macOS](docs/set-up-macos.md)
 * [Set up Ubuntu Linux](docs/set-up-ubuntu.md)
 * Prepare VirtualBox
-* Prepare VMware Workstation
+* [Prepare VMware Workstation](docs/set-up-vmware.md)
 
 
 
 
+...to be continued...
 
 
