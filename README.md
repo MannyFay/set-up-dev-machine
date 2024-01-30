@@ -1,64 +1,30 @@
-# Set Up macOS for Web Development
-In this article I set up a Macintosh computer for web development.  
-If there something is not working, please let me know.
+# Set Up Dev Machine
+...you get into a new company, have this old computer in the basement or you are at a friend and want to set up a new computer for him because he wanna start with development...
+Here the pain starts. Set up a machine again, uff! Again this pain, again this time consuming work, again this monkey work.  
 
-## Recommendation
-Choose a Mac with a minimum of 16 GB RAM and 1 TB disk space.
-I'm on a MacBook Air M1 (so called Apple silicon) with macOS Ventura.
-As keyboard layout I recommend an ANSI US layout.
+For my it is one of the most annoying things in my developer life. I don't care which machine (Windows sucks by the way (my personal opinion)) - I want to start with my work as fast as possible with my complete environment.
+I don't like to search for all the stuff I need. Every time I forget something to install... pain out of hell.
 
-## Tech Stack
-This is the way I set up my web development environment.  
-My tech stack is actually
-* HTML
-* CSS/TailwindCSS
-* JavaScript/AlpineJS
-* PHP/Laravel
-* Composer
-* Docker
-* Neovim
-* PhpStorm
+Because of that I wrote this documentation. Here, I describe how I set up my development environment.  
+Maybe you feel sometime the same and this documentation helps you a little bit - I hope so.
 
-## Set Up
-In this part I start from srcatch with a new Mac (or an clean installation of macOS)
-* Unbox your Mac and plug it into the power source
-* Press the power button and hold it down till your Mac says, that you can leave the button
-* Choose `Options`
-* Choose `Disk Utility`
+I like to do my work mostly in the terminal. So I use a lot of command line tools.  
+My favorite editor is Neovim. I use it for all my projects. Because of that, I have some [configuration files](https://github.com/MannyFay/dotfiles) for it.  
+Actually I explore [Ansible](https://www.ansible.com/). With this, I can automate the installation of my development environment.
+Mostly I do full stack web development with PHP (Laravel, Twig, Everest), JS, TS, Node.js, (Express.js, Vue.js, React, Alpine.js) HTML, CSS (TailwindCSS, Bootstrap, Sass, Less), Docker bla bla bla...
+But! -> You will find Rust, C-Languages, Python and other stuff in my projects too. I'm a developer and I like to explore new things.
 
-### Disk Partitions
-By default your Mac comes with one big APFS partition for the whole system.  
-That's good for the performance of macOS, but not so well for development. So you need two partitions in total.
-The problem for development is, that the default APFS partition is case-insensitive.  
-What means that?  
-Imagine you have a directory (folder) called `Coding`. In this directory exists a file `my-documentation.md`. Fine, but if you try to create
-a second file named `My-documentation.md` your Mac don't creates it because it says 'Hey, I have allready a file called `my-documentation.md`'.
-So `my-documentation.md` and `My-documentation.md` is the same file for your Mac. That's what case-insensitivity is.  
+---
+<br>
 
-In web development you work with a lot of Linux computers (servers, machines of colliques) and you maybe create some web applications that 
-have a interface to change things by users. There comes the problem. Linux is case-sensitive. So `my-documentation.md` is a completely other
-file than `My-documentation.md`.
+# Table of Contents
+* [Set up Apple macOS](docs/set-up-macos.md)
+* [Set up Ubuntu Linux](docs/set-up-ubuntu.md)
+* Prepare VirtualBox
+* Prepare VMware Workstation
 
-### First Partition
-Here runs macOS. Choose the disk `Macintosh HD` and give it 200 GB of space, so it has enough space to breathe for all your apps and system stuff.  
-Select `APFS`. Now worries, it will be encrypted later.
 
-### Second Partition
-Here is the place for all your stuff. Create a partition and name it `Users`. That's important because with this name your apps don't will run 
-into problems. Give it the space of all the rest of your disk and select `APFS (case-sensitive)`.  
-You are ready to go! Press `Apply`.
 
-* Close `Disk Utility`
-* Run macOS
-* Open `Finder` > `Settings` > `Sidebar` > Mark `Hard disks`
-* Copy all directories in `Macintosh HD/Users` to your second partition into `Users`
-* Open `System Settings` > `Users & Groups` > `Right click on your user` > `Advanced Options` > Set Home directory to `/Volumes/Users/yourUserName`
 
-Your home directory is now setted on the case-sensitive partition so you can start with your development projects.. to be continued...
 
-# WIP documentation
-Install Nerd-Font:
-```shell
-brew tap homebrew/cask-fonts &&
-brew install --cask font-space-mono-nerd-font
-```
+
