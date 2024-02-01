@@ -6,18 +6,6 @@ Choose a Mac with a minimum of 16 GB RAM and 1 TB disk space.
 I'm on a MacBook Air M1 (so called Apple silicon) with macOS Ventura.
 As keyboard layout I recommend an ANSI US layout.
 
-## Tech Stack
-This is the way I set up my web development environment.  
-My tech stack is actually
-* HTML
-* CSS/TailwindCSS
-* JavaScript/AlpineJS
-* PHP/Laravel
-* Composer
-* Docker
-* Neovim
-* PhpStorm
-
 ## Set Up
 In this part I start from srcatch with a new Mac (or an clean installation of macOS)
 * Unbox your Mac and plug it into the power source
