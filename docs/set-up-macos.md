@@ -27,6 +27,7 @@ have a interface to change things by users. There comes the problem. Linux is ca
 file than `My-documentation.md`.
 
 ### First Partition
+On Mac, I've 250 GB of disk space. So I use 100 GB for the system and the rest for my user.
 Here runs macOS. Choose the disk `Macintosh HD` and give it 200 GB of space, so it has enough space to breathe for all your apps and system stuff.  
 Select `APFS`. Now worries, it will be encrypted later.
 
