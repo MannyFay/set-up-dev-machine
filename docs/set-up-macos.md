@@ -1,40 +1,28 @@
-In this article I set up a Macintosh computer for web development.  
-If there something is not working, please let me know.
+# Set Up Dev Device - Native Apple macOS
 
-## Recommendation
-Choose a Mac with a minimum of 16 GB RAM and 1 TB disk space.
-I'm on a MacBook Air M1 (so called Apple silicon) with macOS Ventura.
-As keyboard layout I recommend an ANSI US layout.
+## Set Up - Clean Installation of macOS
 
-## Set Up
-In this part I start from srcatch with a new Mac (or an clean installation of macOS)
-* Unbox your Mac and plug it into the power source
-* Press the power button and hold it down till your Mac says, that you can leave the button
+* Unbox device
+* Plug it into a power source
+* Press the power button and hold it down till your Mac says `Loading start up options`
 * Choose `Options`
+* Choose Language - English
 * Choose `Disk Utility`
 
 ### Disk Partitions
-By default your Mac comes with one big APFS partition for the whole system.  
-That's good for the performance of macOS, but not so well for development. So you need two partitions in total.
-The problem for development is, that the default APFS partition is case-insensitive.  
-What means that?  
-Imagine you have a directory (folder) called `Coding`. In this directory exists a file `my-documentation.md`. Fine, but if you try to create
-a second file named `My-documentation.md` your Mac don't creates it because it says 'Hey, I have allready a file called `my-documentation.md`'.
-So `my-documentation.md` and `My-documentation.md` is the same file for your Mac. That's what case-insensitivity is.  
+Macs ship with one big 'APFS' partition for the whole system (improves performance of the OS, is not case-sensitive).
 
-In web development you work with a lot of Linux computers (servers, machines of colliques) and you maybe create some web applications that 
-have a interface to change things by users. There comes the problem. Linux is case-sensitive. So `my-documentation.md` is a completely other
-file than `My-documentation.md`.
+#### Partition 1 - System
+* Size: 250 GB
+* Select `APFS` (encryption setup will be done later)
 
-### First Partition
-On Mac, I've 250 GB of disk space. So I use 100 GB for the system and the rest for my user.
-Here runs macOS. Choose the disk `Macintosh HD` and give it 200 GB of space, so it has enough space to breathe for all your apps and system stuff.  
-Select `APFS`. Now worries, it will be encrypted later.
+#### Partition 2 - User
+* Size: Rest of the disk
+* Select `Volumes > +`
+* Name: `Users` (important to name it `Users` because some apps need this name)
+* Select `APFS (case-sensitive)`
+* Press `Apply`.
 
-### Second Partition
-Here is the place for all your stuff. Create a partition and name it `Users`. That's important because with this name your apps don't will run 
-into problems. Give it the space of all the rest of your disk and select `APFS (case-sensitive)`.  
-You are ready to go! Press `Apply`.
 
 * Close `Disk Utility`
 * Run macOS
